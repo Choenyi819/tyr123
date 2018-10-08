@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		simpleFunction()
+		function simpleFunction(){
+			document.write('I am a simple function, I do nothing but blaaa')
+		}
+		//functionwithArgument();
+		function sum(a,b){
+			document.write(a+b);
+		}
+		sum("a",2);
+		sum(2,3);
+		sum('a',4);
+		function functionWithArgument(name, age) {
+			document.write("hii");
+			document.write("<br>");
+			document.write("your name is "+name);
+			document.write("<br>");
+			document.write("your age is "+age);
+		}
+	</script>
+	<title></title>
+</head>
+<body>
+<p>Click the following button to call the function</p>
+<input type="button" onclick="simpleFunction()">
+<input type="text" id="egg" >
+<input type="text" id="bread">
+<input type="button" onclick="functionWithArgument(document.getElementById('egg').value,document.getElementById('bread').value)">
+</body>
+</html>
